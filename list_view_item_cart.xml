@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_height="120dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/shop_list_view_item">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/shop_pic_cart"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:layout_margin="15dp"
+        android:src="@mipmap/mine_bg"
+        app:riv_corner_radius_bottom_left="8dp"
+        app:riv_corner_radius_bottom_right="8dp"
+        app:riv_corner_radius_top_left="8dp"
+        app:riv_corner_radius_top_right="8dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/list_name_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:text="名称："
+            android:textColor="#1C1C1C"
+            android:textSize="13sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/list_name_right_sql_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/list_name_left"
+            android:text="商品名称"
+            android:textColor="#1C1C1C"
+            android:textSize="13sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/list_price_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="8dp"
+            android:text="价格："
+            android:textColor="#1C1C1C"
+            android:textSize="13sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/list_price_right_sql_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/list_price_left"
+            android:text="商品价格"
+            android:textColor="#1C1C1C"
+            android:textSize="13sp"
+            android:typeface="serif" />
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/shop_cart_jia"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_add_cart"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/cart_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/shop_cart_jia"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/shop_cart_jian"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toLeftOf="@+id/cart_count"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_jian_cart"
+            app:riv_oval="true" />
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

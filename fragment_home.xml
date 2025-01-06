@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context="com.example.myshop.fragment.HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="28dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical|start"
+                android:src="@mipmap/search" />
+            <EditText
+                android:id="@+id/content_home"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:focusable="false"
+                android:clickable="true"
+                android:hint="请输入搜索内容" />
+
+            <ImageView
+                android:id="@+id/search_do_home"
+                android:layout_width="28dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical|end"
+                android:clickable="true"
+                android:src="@mipmap/search_do" />
+
+
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:divider="#00000000"
+            android:dividerHeight="13dp"
+            android:padding="13dp" />
+    </LinearLayout>
+
+
+</FrameLayout>

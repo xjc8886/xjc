@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/lg_img_tiaoguo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@mipmap/login_tiaoguo"
+        app:riv_oval="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/lg_img_top"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/login_pic_board"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/login_pic"
+        app:riv_oval="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/UserName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_edit"
+        android:hint="请输入用户名"
+        android:padding="13dp"
+        android:singleLine="true"
+        android:textSize="17dp"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lg_img_top" />
+
+    <EditText
+        android:id="@+id/Pwd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_edit"
+        android:hint="请输入用户密码"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:padding="13dp"
+        android:singleLine="true"
+        android:textSize="17dp"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserName" />
+
+    <CheckBox
+        android:id="@+id/remenbre_user"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="记住我"
+        android:textSize="11sp"
+        android:textColor="@color/design_default_color_secondary_variant"
+        app:layout_constraintStart_toStartOf="@+id/Pwd"
+        app:layout_constraintTop_toBottomOf="@+id/Pwd"/>
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/login_button"
+        android:text="登录"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/remenbre_user"
+        app:layout_constraintTop_toBottomOf="@+id/remenbre_user" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/login_button"
+        android:text="注册"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/remenbre_user"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/remenbre_user" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
